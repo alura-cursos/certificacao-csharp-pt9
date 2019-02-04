@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Cinema.Dados</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Diretores.txt" />
+    <None Remove="Filmes.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Diretores.txt" />
+    <EmbeddedResource Include="Filmes.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
